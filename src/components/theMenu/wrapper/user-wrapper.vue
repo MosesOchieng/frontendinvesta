@@ -24,7 +24,7 @@
       
       <!-- Github -->
       <div class="basis-1/4 flex justify-end self-center">
-        <a href="https://github.com/amirz-dev/nft-dash-vue" target="_blank" class="hover:cursor-pointer">
+        <a href="#"  class="hover:cursor-pointer">
           <i class="ri-github-line text-[32px] text-light-indigo"></i>
         </a>
       </div>
