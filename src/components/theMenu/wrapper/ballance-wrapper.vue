@@ -43,7 +43,7 @@
             class="ri-add-line text-xl align-middle dark:text-light-slat-Blue"
           ></i>
         </div>
-        <p class="text-[12px] font-medium xl:text-[16px] xl:font-semibold ml-3 dark:text-white text-center">
+        <p class="text-[12px] font-medium xl:text-[16px] xl:font-semibold ml-3 dark:text-white text-center" @click="topUp">
           Top Up Ballance
         </p>
 
@@ -55,6 +55,8 @@
 <script>
 import { computed } from "vue";
 import { useStore } from "vuex";
+import Web3 from 'web3';
+import contractAbi from './ContractAbi.json'; // Load your contract ABI JSON here
 
 export default {
   setup() {
@@ -66,7 +68,38 @@ export default {
       darkMode,
     };
   },
+  data() {
+    return {
+      message: '',
+    };
+  },
+  methods: {
+    async topUp() {
+      if (!window.ethereum) {
+        this.message = 'Metamask is not installed';
+        return;
+      }
+
+      try {
+        const web3 = new Web3(window.ethereum);
+        const contractAddress = '0xd9145CCE52D386f254917e481eB44e9943F39138'; // Replace with your actual contract address
+        const contract = new web3.eth.Contract(contractAbi, contractAddress);
+
+        const accounts = await web3.eth.requestAccounts();
+        const userAddress = accounts[0];
+
+        // Call the topUp function on the smart contract
+        await contract.methods.topUp().send({ from: userAddress, value: web3.utils.toWei('0.1', 'ether') });
+
+        this.message = 'Top-up successful';
+      } catch (error) {
+        console.error('Error:', error);
+        this.message = 'Error occurred while topping up';
+      }
+    },
+  },
 };
+
 </script>
 
 <style>
