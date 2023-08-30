@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetaMask Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin-top: 0;
+        }
+        .address {
+            font-weight: bold;
+            color: #333;
+            margin-top: 10px;
+        }
+        .button {
+            margin-top: 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>MetaMask Login</h1>
+        <p>Connect your MetaMask wallet to proceed:</p>
+        <button class="button" id="connectButton">Connect with MetaMask</button>
+        <p class="address" id="userWalletAddress"></p>
+    </div>
+
+    <script>
+        async function connectWithMetaMask() {
+            try {
+                // Request user's Ethereum address
+                const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
+
+                // Display user's Ethereum address
+                const userWalletAddress = accounts[0];
+                const addressElement = document.getElementById('userWalletAddress');
+                addressElement.textContent = `Connected wallet: ${userWalletAddress}`;
+
+                // Redirect to the next page after successful connection
+                // Change the URL to your desired destination
+                setTimeout(() => {
+                    window.location.href = '/dashboard';
+                }, 1500);
+            } catch (error) {
+                console.error(error.message);
+            }
+        }
+
+        document.getElementById('connectButton').addEventListener('click', connectWithMetaMask);
+    </script>
+</body>
+</html>
