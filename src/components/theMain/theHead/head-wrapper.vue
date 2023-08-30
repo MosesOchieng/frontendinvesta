@@ -88,7 +88,7 @@
           class="w-[52px] h-[52px] border-2 border-[#EAEEF3] dark:border-cloud-burst rounded-full flex justify-center items-center menu__items-hover text-[#131736] dark:text-white"
           @click="darkModeInput"
         >
-          <a href="#" target="_blank">
+          <a href="#">
               <i class="ri-github-line text-[16px] z-20"></i>
           </a>
         </div>
