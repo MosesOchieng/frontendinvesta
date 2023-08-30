@@ -41,10 +41,10 @@
               <p
                 class="text-[#131736] dark:text-white text-[14px] font-semibold z-10"
               >
-                Creator
+                DAO
               </p>
               <p class="text-regent-grey text-[14px] font-semibold z-10">
-                Collector
+               Investor
               </p>
             </div>
           </label>
