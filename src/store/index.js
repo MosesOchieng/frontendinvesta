@@ -3,50 +3,50 @@ import { createStore } from "vuex";
 const Store = createStore({
   state() {
     return {
-      darkMode: false,
+      darkMode: true,
       sliders: [
         {
-          img: "slider-1.jpg",
+          img: "l.jpeg",
           bid: "0.10 ETH",
           time: "12h 43m 27s",
-          name: "An Interstellar Wanderer",
+          name: "Vegatables growing",
           seller: {
-            id: "@ronanhunt88",
-            img: "user-1.jpg",
+            id: "@safari DAO - Kenya",
+            img: "l.jpg",
           },
         },
         {
-          img: "slider-2.jpg",
+          img: "k.jpeg",
           bid: "0.10 ETH",
           time: "12h 43m 27s",
-          name: "Pepe community on tour",
+          name: "Banana's growing",
           seller: {
-            id: "@huntlancer",
-            img: "user-2.jpg",
+            id: "@Mugosa DAO - Uganda",
+            img: "k.jpg",
           },
         },
         {
-          img: "slider-3.jpg",
+          img: "t.jpeg",
           bid: "0.10 ETH",
           time: "12h 43m 27s",
-          name: "Mixed Girl Power",
+          name: "Tea Farming",
           seller: {
-            id: "@aslanruby",
-            img: "user-3.jpg",
+            id: "@RiftValley Dao - Kenya",
+            img: "p.webp",
           },
         },
         {
-          img: "slider-1.jpg",
+          img: "k.webp",
           bid: "0.10 ETH",
           time: "12h 43m 27s",
-          name: "An Interstellar Wanderer",
+          name: "Coffee Growing",
           seller: {
-            id: "@ronanhunt88",
-            img: "user-1.jpg",
+            id: "@Amharic DAO - Ethopia",
+            img: "b.webp",
           },
         },
         {
-          img: "slider-2.jpg",
+          img: "yams.webp",
           bid: "0.10 ETH",
           time: "12h 43m 27s",
           name: "Pepe community on tour",

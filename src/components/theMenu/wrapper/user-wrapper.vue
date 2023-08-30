@@ -12,9 +12,9 @@
       
       <!-- name -->
       <div class="basis-2/4">
-        <p class="text-[20px] xl:text-[24px] font-semibold text-[#131736] dark:text-white">Amir</p>
+        <p class="text-[20px] xl:text-[24px] font-semibold text-[#131736] dark:text-white">Moses</p>
         <p class="text-[12px] xl:text-[14px] font-medium xl:font-semibold text-[#A0A2AE] dark:text-white">
-          Creator
+         Investor
           <span class="text-bright-sun">
             Pro
             <i class="ri-add-line align-middle"></i>

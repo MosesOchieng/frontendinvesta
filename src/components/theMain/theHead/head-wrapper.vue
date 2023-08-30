@@ -2,7 +2,7 @@
   <div class="flex justify-between items-center">
       <div class="flex flex-col">
         <p class="text-[30px] font-semibold text-[#131736] dark:text-white">
-          Good morning, Amir
+          Good morning, Moses
         </p>
         <div class="flex items-center mt-1">
           <img
