@@ -49,10 +49,10 @@ const Store = createStore({
           img: "yams.webp",
           bid: "0.10 ETH",
           time: "12h 43m 27s",
-          name: "Pepe community on tour",
+          name: "Yams Growing",
           seller: {
-            id: "@huntlancer",
-            img: "user-2.jpg",
+            id: "@Ogadu DAO",
+            img: "yms.webp",
           },
         },
       ],

@@ -2,13 +2,13 @@
   <div class="flex flex-col w-full 2xl:w-[575px]">
       <!--========== Head ==========-->
       <div class="flex justify-between">
-        <h1 class="text-[#131736] dark:text-white text-[32px] font-semibold">Featured Creators</h1>
+        <h1 class="text-[#131736] dark:text-white text-[32px] font-semibold">Investements</h1>
 
         <div
           class="flex items-center rounded-xl px-5 hover:cursor-pointer transition ease-in-out hover:bg-[#7b62ff26] dark:hover:bg-[#272856] duration-300"
         >
           <p class="text-light-slat-Blue text-[16px] font-semibold">
-            All Creators
+           Loans & Investements
           </p>
         </div>
       </div>
